@@ -2,8 +2,6 @@ server:
   port: 9001
 
 spring:
-  application:
-    name: SYSTEM-SERVICE
   datasource:
     url: jdbc:mysql:///hrm-system? serverTimezone=UTC&useSSL=false&useUnicode=true&characterEncoding=utf8
 
