@@ -11,6 +11,13 @@ hrm:
   swagger:
     title: 课程管理服务
     description: 课程管理服务接口文档
+
 feign:
   hystrix:
     enabled: true
+    command:
+      default:
+        execution:
+          isolation:
+            thread:
+              timeoutInMilliseconds: 4000 # 设置hystrix的超时时间为5000ms
